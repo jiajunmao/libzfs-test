@@ -7,6 +7,7 @@
 #include <string.h>
 #include <sys/types.h>
 #include <libzfs_core.h>
+#include <libnvpair.h>
 
 int main() {
 
