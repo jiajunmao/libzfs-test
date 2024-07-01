@@ -52,6 +52,11 @@ int main() {
         return EXIT_FAILURE;
     }
 
+    if (nvlist_add_uint64(nvl, "col_idx", 2)) {
+        nvlist_free(nvl);
+        return EXIT_FAILURE;
+    }
+
     int ret = lzc_mlec_test("pool", nvl);
     printf("lzc_mlec_test returned %d\n", ret);
 
