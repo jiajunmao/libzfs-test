@@ -37,7 +37,7 @@ int main() {
         return EXIT_FAILURE;
     }
 
-    if (nvlist_add_uint64(nvl, "objset_id", 2)) {
+    if (nvlist_add_uint64(nvl, "objset_id", 54)) {
         nvlist_free(nvl);
         return EXIT_FAILURE;
     }
